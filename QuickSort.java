@@ -1,6 +1,6 @@
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = {10, 7, 8, 9, 1, 5};
+        int[] arr = {35,20,15,25,80,50,90,45};
         quickSort(arr, 0, arr.length - 1);
         System.out.println("Sorted array: " + java.util.Arrays.toString(arr));
     }
@@ -22,6 +22,7 @@ public class QuickSort {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
+                System.out.println(arr[i] + " " + arr[j]);
             }
         }
         int temp = arr[i + 1];
