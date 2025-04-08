@@ -21,7 +21,7 @@ public class AdjacencyList {
             int u = scanner.nextInt();
             int v = scanner.nextInt();
             graph.get(u).add(v);
-            graph.get(v).add(u); // Undirected graph
+            graph.get(v).add(u);
         }
 
         System.out.println("Adjacency List:");
