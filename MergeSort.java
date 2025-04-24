@@ -2,11 +2,8 @@ import java.util.*;
 public class MergeSort {
     public static void main(String[] args) {
         int[] array = {6, 4, 2, 1, 9, 8, 3, 5};
-
         System.out.println("Original Array: " + Arrays.toString(array));
-
         int n = array.length;
-
         for (int step = 1; step < n; step *= 2) {
             for (int left = 0; left < n - step; left += 2 * step) {
                 int mid = left + step - 1;
